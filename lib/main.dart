@@ -181,7 +181,10 @@ import 'package:blood/screen/drawerscreen/Rate.dart';
 import 'package:blood/screen/drawerscreen/ReferFriend.dart';
 import 'package:blood/screen/drawerscreen/Requests.dart';
 import 'package:blood/screen/drawerscreen/notification.dart';
+import 'package:blood/screen/signup/login.dart';
+import 'package:blood/screen/signup/otp_verification.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -203,6 +206,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
+       
     );
   }
 }
@@ -252,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                   color: Color.fromARGB(255, 162, 45, 45),
                   child: DrawerHeader(
                       child: Image.asset(
-                          "assets/blood.png"))),
+                          "assets/images/blood.png"))),
               // const DrawerHeader(
               //     decoration: BoxDecoration(
 
@@ -450,7 +454,7 @@ class _HomePageState extends State<HomePage> {
                 onTap: () {
                  Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => Logout()),
+                    MaterialPageRoute(builder: (context) => Login()),
                   );
                 },
               ),
