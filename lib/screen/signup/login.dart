@@ -126,7 +126,7 @@ class _LoginState extends State<Login> {
                      onPressed: (){
                    Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => Login()),
+                    MaterialPageRoute(builder: (context) => OtpVerification()),
                   );
                 },
                    ),

@@ -1,3 +1,4 @@
+import 'package:blood/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
@@ -143,7 +144,12 @@ class _OtpVerificationState extends State<OtpVerification> {
                        padding:
                            const EdgeInsets.symmetric(vertical: 12, horizontal: 60),
                      ),
-                     onPressed: (){},
+                     onPressed: (){
+                       Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                   );
+                   },
                    ),
                  ),
                  
